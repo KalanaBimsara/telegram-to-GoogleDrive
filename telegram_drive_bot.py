@@ -19,7 +19,7 @@ load_dotenv()
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 # Ensure credentials file exists
-GOOGLE_CREDENTIALS_FILE = os.path.join(os.getcwd(), "ambient-depth-450117-t2-817e247adf33.json")
+GOOGLE_CREDENTIALS_FILE = os.path.join(os.getcwd(), "ambient-depth-450117-t2-a40f3315d879.json")
 
 # Google Drive API Scopes
 SCOPES = ["https://www.googleapis.com/auth/drive.file"]
