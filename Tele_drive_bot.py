@@ -43,7 +43,7 @@ async def start_command(message: Message):
 
     if not user:
         await users_collection.insert_one({"user_id": message.from_user.id, "username": message.from_user.username})
-        await message.answer("👋 Welcome! Please send your **Google Drive JSON credentials file**.")
+        await message.answer("👋 Welcome! (How to configure - https://github.com/KalanaBimsara/telegram-to-GoogleDrive ) Please send your **Google Drive JSON credentials file**.")
     else:
         if "credentials_json" not in user:
             await message.answer("📂 Please upload your Google Drive JSON credentials file to proceed.")
